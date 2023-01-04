@@ -1,0 +1,20 @@
+import java.util.List;
+
+public class ParticipantService {
+    private ParticipantDAO participantDAO;
+
+    public ParticipantService() {
+        this.participantDAO = new JDBCParticipantDAO();
+    }
+
+    public List<Participant> getAllParticipants() {
+        return participantDAO.getAllParticipants();
+    }
+    public Participant getParticipantByID(int pid){
+        return participantDAO.getParticipantByID(pid);
+    }
+
+    public void updateParticipant(int pid, String name, int batchID){ participantDAO.updateParticipant(new Participant(pid,name,batchID));}
+
+    // Other business logic methods
+}
