@@ -5,6 +5,6 @@ public interface ParticipantDAO {
     Participant getParticipantByID(int pid);
     void updateParticipant(Participant participant);
     void addParticipant(Participant participant);
-    void deleteParticipant(Participant participant);
+    void deleteParticipant(int pid);
 
 }

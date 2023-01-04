@@ -159,11 +159,13 @@ public class JDBCParticipantDAO implements ParticipantDAO {
 
     @Override
     public void addParticipant(Participant participant) {
-
+        String sql = "insert into Participants (name,batchname,) VALUES ('"+ participant.getName() +"', "+ participant.getbatchID() + ")";
+        executeSQLUpdate(sql);
     }
 
     @Override
-    public void deleteParticipant(Participant participant) {
-
+    public void deleteParticipant(int pid) {
+        String sql = "DELETE FROM Participants WHERE id = "+pid;
+        executeSQLUpdate(sql);
     }
 }

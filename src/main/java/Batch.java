@@ -5,8 +5,9 @@ public class Batch {
         super();
     }
 
-    public Batch(String batchName) {
+    public Batch(int id, String batchName) {
         this.batchName = batchName;
+        this.batchID = id;
     }
 
     public int getBatchID() {

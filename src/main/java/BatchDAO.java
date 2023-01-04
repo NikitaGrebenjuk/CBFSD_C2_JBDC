@@ -5,5 +5,5 @@ public interface BatchDAO {
     Batch getBatchById(int id);
     void addBatch(Batch batch);
     void updateBatch(Batch batch);
-    void deleteBatch(Batch batch);
+    void deleteBatch(int bid);
 }
