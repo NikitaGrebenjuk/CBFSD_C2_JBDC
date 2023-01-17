@@ -9,7 +9,8 @@
 #
 # Production stage
 #
-FROM tomcat:11.0-jre11
+#FROM tomcat:11.0-jre11
+FROM tomcat:10.1.4-jre11
 #alternative1:
 COPY target/*.war /usr/local/tomcat/webapps/
 

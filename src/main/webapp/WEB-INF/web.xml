@@ -7,13 +7,12 @@
 
   <!-- Servlet definition -->
   <servlet>
-    <servlet-name>start</servlet-name>
+    <servlet-name>StartServlet</servlet-name>
     <servlet-class>StartServlet</servlet-class>
   </servlet>
 
-  <!-- Servlet mapping -->
   <servlet-mapping>
-    <servlet-name>start</servlet-name>
+    <servlet-name>StartServlet</servlet-name>
     <url-pattern>/start</url-pattern>
   </servlet-mapping>
 </web-app>
